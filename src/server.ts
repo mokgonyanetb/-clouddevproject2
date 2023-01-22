@@ -31,7 +31,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   //! END @TODO1
 
-  app.get("/filteredimage", async(req:Request, res:Response) =>{
+  app.get("/filteredimage", async(req:Request, res:Response) => {
 
     // validating the image url
 
@@ -53,7 +53,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
       return await deleteLocalFiles([filteredImagePath]);
     });
 
-  })
+  });
 
   
   // Root Endpoint
